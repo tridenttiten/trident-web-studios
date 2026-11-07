@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TRIDENT WEB STUDIOS</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080d1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: #0d1427;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #54d9ff;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #54d9ff;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(
+    ellipse at center,
+    #17294b,
+    #080d1b 70%
+  );
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 75px);
+  max-width: 950px;
+  line-height: 1.15;
+}
+
+.hero h1 span {
+  color: #54d9ff;
+}
+
+.hero p {
+  color: #aab7d0;
+  margin: 22px 0 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #54d9ff;
+  color: #07101d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 85px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.sub {
+  color: #aab7d0;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #111b31;
+  border: 1px solid #263754;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: left;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #54d9ff;
+}
+
+.card h3 {
+  color: #54d9ff;
+  margin-bottom: 14px;
+}
+
+.card p {
+  color: #aab7d0;
+  line-height: 1.7;
+}
+
+.about {
+  background: #0d1427;
+}
+
+.about p {
+  color: #aab7d0;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #101a30;
+}
+
+.contact p {
+  color: #aab7d0;
+  margin: 20px 0 30px;
+}
+
+.email {
+  color: #54d9ff;
+  display: block;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #8291aa;
+  background: #080d1b;
+}
+
+@media(max-width: 600px) {
+  header {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  section {
+    padding: 65px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    TRIDENT
+    <span>WEB STUDIOS</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+
+  <h1>
+    WE BUILD YOUR
+    <span>DIGITAL FUTURE.</span>
+  </h1>
+
+  <p>
+    Modern Websites. Creative Design.
+    Powerful Results.
+  </p>
+
+  <a href="#contact" class="btn">
+    START A PROJECT ↗
+  </a>
+
+</div>
+
+<section id="services">
+
+  <h2>OUR SERVICES</h2>
+
+  <p class="sub">
+    Everything you need to grow online.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🌐 Website Design</h3>
+      <p>
+        Beautiful and modern websites
+        for your business.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Web Development</h3>
+      <p>
+        Fast, responsive and functional
+        websites.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🛒 E-Commerce</h3>
+      <p>
+        Online stores to take your
+        business forward.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <h2>ABOUT US</h2>
+
+  <p>
+    Welcome to TRIDENT WEB STUDIOS.
+    We create modern, creative and
+    responsive websites that help
+    businesses build their digital
+    presence. Our mission is to turn
+    your ideas into reality.
+  </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2>HAVE A PROJECT?</h2>
+
+  <p>
+    Let's create something amazing together.
+  </p>
+
+  <a
+    class="btn"
+    href="mailto:tridenttiten@gmail.com?subject=Website%20Project%20Inquiry"
+  >
+    CONTACT US ↗
+  </a>
+
+  <a
+    class="email"
+    href="mailto:tridenttiten@gmail.com"
+  >
+    tridenttiten@gmail.com
+  </a>
+
+</section>
+
+<footer>
+  © 2026 TRIDENT WEB STUDIOS.
+  ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
+
